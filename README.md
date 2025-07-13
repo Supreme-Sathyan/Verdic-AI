@@ -32,7 +32,7 @@ Cloud and Security: Cloud infrastructure ensures scalability and security, safeg
 
 Programming Languages: Python, JavaScript
 
-Frameworks: Django (Backend), React (Frontend)
+Frameworks: Flask (Backend), HTML/CSS (Frontend)
 
 Machine Learning Libraries: TensorFlow, scikit-learn
 
