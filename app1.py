@@ -19,7 +19,7 @@ import os
 
 def generate(user_input):
     client = genai.Client(
-        api_key="AIzaSyC-Q5av27ozHb7s-m0qLe8FZtTilWuRhvc"
+        api_key=""
     )
 
     model = "gemini-1.5-pro"
