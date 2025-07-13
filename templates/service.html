@@ -1,0 +1,364 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="utf-8">
+    <title>Verdic-AI</title>
+    <meta content="width=device-width, initial-scale=1.0" name="viewport">
+    <meta content="Free HTML Templates" name="keywords">
+    <meta content="Free HTML Templates" name="description">
+
+    <!-- Favicon -->
+    <link href="img/favicon.ico" rel="icon">
+
+    <!-- Google Web Fonts -->
+    <link rel="preconnect" href="https://fonts.gstatic.com">
+    <link href="https://fonts.googleapis.com/css2?family=Montserrat:wght@400;600&family=Roboto:wght@300;500;700&display=swap" rel="stylesheet"> 
+
+    <!-- Font Awesome -->
+    <link href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.10.0/css/all.min.css" rel="stylesheet">
+
+    <!-- Libraries Stylesheet -->
+    <link href="lib/owlcarousel/assets/owl.carousel.min.css" rel="stylesheet">
+    <link href="lib/tempusdominus/css/tempusdominus-bootstrap-4.min.css" rel="stylesheet" />
+
+    <!-- Customized Bootstrap Stylesheet -->
+    <link href="{{ url_for('static', filename='css/style.css') }}" rel="stylesheet">
+</head>
+
+<body>
+    <!-- Header Start -->
+    <div class="container-fluid">
+        <div class="row">
+            <div class="col-lg-3 bg-secondary d-none d-lg-block">
+                <a href="{{ url_for('home')}}" class="navbar-brand w-100 h-100 m-0 p-0 d-flex align-items-center justify-content-center">
+                    <h1 class="m-0 display-4 text-primary text-uppercase">Verdic-AI</h1>
+                </a>
+            </div>
+            <div class="col-lg-9">
+                <div class="row bg-white border-bottom d-none d-lg-flex">
+                    <div class="col-lg-7 text-left">
+                        <div class="h-100 d-inline-flex align-items-center py-2 px-3">
+                            <i class="fa fa-envelope text-primary mr-2"></i>
+                            <small>verdicai@gmail.com</small>
+                        </div>
+                        <div class="h-100 d-inline-flex align-items-center py-2 px-2">
+                            <i class="fa fa-phone-alt text-primary mr-2"></i>
+                            <small>+012 345 6789</small>
+                        </div>
+                    </div>
+                    <div class="col-lg-5 text-right">
+                        <div class="d-inline-flex align-items-center p-2">
+                            <a class="btn btn-sm btn-outline-primary btn-sm-square mr-2" href="">
+                                <i class="fab fa-facebook-f"></i>
+                            </a>
+                            <a class="btn btn-sm btn-outline-primary btn-sm-square mr-2" href="">
+                                <i class="fab fa-twitter"></i>
+                            </a>
+                            <a class="btn btn-sm btn-outline-primary btn-sm-square mr-2" href="">
+                                <i class="fab fa-linkedin-in"></i>
+                            </a>
+                            <a class="btn btn-sm btn-outline-primary btn-sm-square mr-2" href="">
+                                <i class="fab fa-instagram"></i>
+                            </a>
+                            <a class="btn btn-sm btn-outline-primary btn-sm-square mr-2" href="">
+                                <i class="fab fa-youtube"></i>
+                            </a>
+                        </div>
+                    </div>
+                </div>
+                <nav class="navbar navbar-expand-lg bg-white navbar-light p-0">
+                    <a href="{{ url_for('home') }}" class="navbar-brand d-block d-lg-none">
+                        <h1 class="m-0 display-4 text-primary text-uppercase">Justice</h1>
+                    </a>
+                    <button type="button" class="navbar-toggler" data-toggle="collapse" data-target="#navbarCollapse">
+                        <span class="navbar-toggler-icon"></span>
+                    </button>
+                    <div class="collapse navbar-collapse justify-content-between" id="navbarCollapse">
+                        <div class="navbar-nav mr-auto py-0">
+                            <a href="{{ url_for('home') }}" class="nav-item nav-link active">Home</a>
+                            <a href="{{ url_for('about') }}" class="nav-item nav-link">About us </a>
+                            <a href="{{ url_for('service') }}" class="nav-item nav-link">Services offered</a>
+                            <a href="{{ url_for('precedence') }}" class="nav-item nav-link">Precedence Finder</a>
+                            <a href="{{ url_for('document') }}" class="nav-item nav-link">Document Generator</a>
+                            <a href="{{ url_for('backlog') }}" class="nav-item nav-link active">Backlog Management</a>
+                        </div>
+                        <a href="{{ url_for('chat') }}" class="btn btn-primary mr-3 d-none d-lg-block">ChatBot</a>
+                    </div>
+                </nav>
+            </div>
+        </div>
+    </div>
+    <!-- Header End -->
+    
+    
+        <!-- Page Header Start -->
+        <div class="container-fluid bg-page-header" style="margin-bottom: 90px;">
+            <div class="container">
+                <div class="d-flex flex-column align-items-center justify-content-center" style="min-height: 400px">
+                    <h3 class="display-3 text-white text-uppercase">Practicioning</h3>
+                    <div class="d-inline-flex text-white">
+                        <p class="m-0 text-uppercase"><a class="text-white" href="">Home</a></p>
+                        <i class="fa fa-angle-double-right pt-1 px-3"></i>
+                        <p class="m-0 text-uppercase">Practicioning</p>
+                    </div>
+                </div>
+            </div>
+        </div>
+        <!-- Page Header End -->
+    <!-- Services Start -->
+  <!-- Services Start -->
+<div class="container-fluid py-5">
+    <div class="container py-5">
+        <div class="text-left pb-5">
+            <h6 class="text-uppercase text-primary">Find Your Lawyer</h6>
+            <h1 class="mb-4">Specialized Legal Experts for Your Case</h1>
+            <p class="w-75">Based on your case details, we recommend verified lawyers across various specializations.</p>
+        </div>
+        <div id="lawyerCarousel" class="carousel slide" data-ride="carousel" data-interval="6000">
+            <div class="carousel-inner">
+                <!-- Lawyer 1 -->
+                <div class="carousel-item active">
+                    <div class="row align-items-center">
+                        <div class="col-md-4">
+                            <img src="{{ url_for('static', filename='img/lawyer1.jpg') }}" class="d-block w-100 rounded" alt="Adv. Priya Mehta">
+                        </div>
+                        <div class="col-md-8 text-left">
+                            <h5 class="mb-3">Adv. Harshad Mehta</h5>
+                            <p class="text-muted">Criminal Defense | 10+ years | Mumbai</p>
+                            <p class="m-0">Highly rated for her success in high-profile criminal trials and procedural justice cases with a 92% success rate in acquittals.</p>
+                            <div class="mt-3">
+                                <span class="badge bg-primary me-2">Murder Cases</span>
+                                <span class="badge bg-primary me-2">Bail Applications</span>
+                                <span class="badge bg-primary">Appeals</span>
+                            </div>
+                            <small class="text-primary mt-2 d-block">Email: harshad.mehta@legalmail.com | ★ 4.8 (127 reviews)</small>
+                        </div>
+                    </div>
+                </div>
+                
+                <!-- Lawyer 2 -->
+                <div class="carousel-item">
+                    <div class="row align-items-center">
+                        <div class="col-md-4">
+                            <img src="{{ url_for('static', filename='img/lawyer2.jpg') }}" class="d-block w-100 rounded" alt="Adv. Ramesh Iyer">
+                        </div>
+                        <div class="col-md-8 text-left">
+                            <h5 class="mb-3">Adv. Ramesh Iyer</h5>
+                            <p class="text-muted">Family Law | 8 years | Chennai</p>
+                            <p class="m-0">Specialist in divorce, custody battles, and family settlements with a mediation-first approach that has resolved 85% of cases out of court.</p>
+                            <div class="mt-3">
+                                <span class="badge bg-primary me-2">Divorce</span>
+                                <span class="badge bg-primary me-2">Child Custody</span>
+                                <span class="badge bg-primary">Alimony</span>
+                            </div>
+                            <small class="text-primary mt-2 d-block">Email: ramesh.iyer@legalmail.com | ★ 4.6 (89 reviews)</small>
+                        </div>
+                    </div>
+                </div>
+                
+                <!-- Lawyer 3 -->
+                <div class="carousel-item">
+                    <div class="row align-items-center">
+                        <div class="col-md-4">
+                            <img src="{{ url_for('static', filename='img/lawyer3.jpg') }}" class="d-block w-100 rounded" alt="Adv. Shruti Kapoor">
+                        </div>
+                        <div class="col-md-8 text-left">
+                            <h5 class="mb-3">Adv. Shruti Kapoor</h5>
+                            <p class="text-muted">IP Law | 6 years | Delhi NCR</p>
+                            <p class="m-0">Expert in trademarks, copyrights, and patent litigation, assisting startups and creators with over 300 successful IP registrations.</p>
+                            <div class="mt-3">
+                                <span class="badge bg-primary me-2">Trademarks</span>
+                                <span class="badge bg-primary me-2">Copyrights</span>
+                                <span class="badge bg-primary">Patent Law</span>
+                            </div>
+                            <small class="text-primary mt-2 d-block">Email: shruti.kapoor@legalmail.com | ★ 4.7 (64 reviews)</small>
+                        </div>
+                    </div>
+                </div>
+                
+                <!-- Lawyer 4 -->
+                <div class="carousel-item">
+                    <div class="row align-items-center">
+                        <div class="col-md-4">
+                            <img src="{{ url_for('static', filename='img/lawyer4.jpg') }}" class="d-block w-100 rounded" alt="Adv. Tarun Bansal">
+                        </div>
+                        <div class="col-md-8 text-left">
+                            <h5 class="mb-3">Adv.Harvey Specter</h5>
+                            <p class="text-muted">Corporate Law | 12 years | Bengaluru</p>
+                            <p class="m-0">Provides legal counsel for mergers, acquisitions, and regulatory compliance for tech firms, handling over ₹500 crore in transactions annually.</p>
+                            <div class="mt-3">
+                                <span class="badge bg-primary me-2">M&A</span>
+                                <span class="badge bg-primary me-2">Startup Compliance</span>
+                                <span class="badge bg-primary">Corporate Governance</span>
+                            </div>
+                            <small class="text-primary mt-2 d-block">Email: harvey.specter@legalmail.com | ★ 4.9 (142 reviews)</small>
+                        </div>
+                    </div>
+                </div>
+                
+                <!-- Lawyer 5 -->
+                <div class="carousel-item">
+                    <div class="row align-items-center">
+                        <div class="col-md-4">
+                            <img src="{{ url_for('static', filename='img/lawyer5.jpg') }}" class="d-block w-100 rounded" alt="Adv. Neha Raj">
+                        </div>
+                        <div class="col-md-8 text-left">
+                            <h5 class="mb-3">Adv. Mike Ross</h5>
+                            <p class="text-muted">Cybercrime | 7 years | Hyderabad</p>
+                            <p class="m-0">Experienced in data privacy violations, cyber frauds, and online harassment litigation with successful prosecution in 78% of cases.</p>
+                            <div class="mt-3">
+                                <span class="badge bg-primary me-2">Data Privacy</span>
+                                <span class="badge bg-primary me-2">Cyber Fraud</span>
+                                <span class="badge bg-primary">Online Defamation</span>
+                            </div>
+                            <small class="text-primary mt-2 d-block">Email: mike.ross@legalmail.com | ★ 4.5 (56 reviews)</small>
+                        </div>
+                    </div>
+                </div>
+            </div>
+            
+            <!-- Carousel Controls -->
+            <a class="carousel-control-prev" href="#lawyerCarousel" role="button" data-slide="prev">
+                <span class="carousel-control-prev-icon" aria-hidden="true"></span>
+                <span class="sr-only">Previous</span>
+            </a>
+            <a class="carousel-control-next" href="#lawyerCarousel" role="button" data-slide="next">
+                <span class="carousel-control-next-icon" aria-hidden="true"></span>
+                <span class="sr-only">Next</span>
+            </a>
+            
+            <!-- Indicators -->
+            <ol class="carousel-indicators">
+                <li data-target="#lawyerCarousel" data-slide-to="0" class="active"></li>
+                <li data-target="#lawyerCarousel" data-slide-to="1"></li>
+                <li data-target="#lawyerCarousel" data-slide-to="2"></li>
+                <li data-target="#lawyerCarousel" data-slide-to="3"></li>
+                <li data-target="#lawyerCarousel" data-slide-to="4"></li>
+            </ol>
+        </div>
+    </div>
+</div>
+<!-- Services End -->
+<!-- Services End -->
+        <!-- Footer Start -->
+        <div class="container-fluid bg-secondary text-white pt-5 px-sm-3 px-md-5" style="margin-top: 90px;">
+            <div class="row mt-5">
+                <div class="col-lg-4">
+                    <div class="d-flex justify-content-lg-center p-4" style="background: rgba(256, 256, 256, .05);">
+                        <i class="fa fa-2x fa-map-marker-alt text-primary"></i>
+                        <div class="ml-3">
+                            <h5 class="text-white">Our Office</h5>
+                            <p class="m-0">Sri Venkateswara College of Engineering</p>
+                            <p class="m-0">Sriperumbudur - 602 117 </p>
+                            <p class="m-0">Tamil Nadu, India</p>
+    
+                        </div>
+                    </div>
+                </div>
+                <div class="col-lg-4">
+                    <div class="d-flex justify-content-lg-center p-4" style="background: rgba(256, 256, 256, .05);">
+                        <i class="fa fa-2x fa-envelope-open text-primary"></i>
+                        <div class="ml-3">
+                            <h5 class="text-white">Email Us</h5>
+                            <p class="m-0">verdicai@gmail.com</p>
+                        </div>
+                    </div>
+                </div>
+                <div class="col-lg-4">
+                    <div class="d-flex justify-content-lg-center p-4" style="background: rgba(256, 256, 256, .05);">
+                        <i class="fa fa-2x fa-phone-alt text-primary"></i>
+                        <div class="ml-3">
+                            <h5 class="text-white">Call Us</h5>
+                            <p class="m-0">+012 345 6789</p>
+                        </div>
+                    </div>
+                </div>
+            </div>
+            <div class="row pt-5">
+                <div class="col-lg-3 col-md-6 mb-5">
+                    <a href="index.html" class="navbar-brand">
+                        <h1 class="m-0 mt-n2 display-4 text-primary text-uppercase">Verdic-AI</h1>
+                    </a>
+                    <p>Justice Delayed is Justice Denied</p>
+                    <div class="d-flex justify-content-start mt-4">
+                        <a class="btn btn-lg btn-outline-light btn-lg-square mr-2" href="#"><i class="fab fa-twitter"></i></a>
+                        <a class="btn btn-lg btn-outline-light btn-lg-square mr-2" href="#"><i class="fab fa-facebook-f"></i></a>
+                        <a class="btn btn-lg btn-outline-light btn-lg-square mr-2" href="#"><i class="fab fa-linkedin-in"></i></a>
+                        <a class="btn btn-lg btn-outline-light btn-lg-square" href="#"><i class="fab fa-instagram"></i></a>
+                    </div>
+                </div>
+                <div class="col-lg-3 col-md-6 mb-5">
+                    <h4 class="font-weight-semi-bold text-primary mb-4">Popular Links</h4>
+                    <div class="d-flex flex-column justify-content-start">
+                        <a class="text-white mb-2" href="#"><i class="fa fa-angle-right mr-2"></i>Home</a>
+                        <a class="text-white mb-2" href="#"><i class="fa fa-angle-right mr-2"></i>About</a>
+                        <a class="text-white mb-2" href="#"><i class="fa fa-angle-right mr-2"></i>Services</a>
+                        <a class="text-white mb-2" href="#"><i class="fa fa-angle-right mr-2"></i>Attorney</a>
+                        <a class="text-white" href="#"><i class="fa fa-angle-right mr-2"></i>Contact</a>
+                    </div>
+                </div>
+                <div class="col-lg-3 col-md-6 mb-5">
+                    <h4 class="font-weight-semi-bold text-primary mb-4">Quick Links</h4>
+                    <div class="d-flex flex-column justify-content-start">
+                        <a class="text-white mb-2" href="#"><i class="fa fa-angle-right mr-2"></i>FAQs</a>
+                        <a class="text-white mb-2" href="#"><i class="fa fa-angle-right mr-2"></i>Help</a>
+                        <a class="text-white mb-2" href="#"><i class="fa fa-angle-right mr-2"></i>Terms</a>
+                        <a class="text-white mb-2" href="#"><i class="fa fa-angle-right mr-2"></i>Privacy</a>
+                        <a class="text-white" href="#"><i class="fa fa-angle-right mr-2"></i>Site Map</a>
+                    </div>
+                </div>
+                <div class="col-lg-3 col-md-6 mb-5">
+                    <h4 class="font-weight-semi-bold text-primary mb-4">Developers</h4>
+                    <p>This Website was developed by the team Programming Geeks for the icube Hackathon.</p>
+                    <div class="w-100">
+                    </div>
+                </div>
+            </div>
+            <div class="row p-4 mt-5 mx-0" style="background: rgba(256, 256, 256, .05);">
+                <div class="col-md-6 text-center text-md-left mb-3 mb-md-0">
+                    <p class="m-0 text-white">&copy; <a class="font-weight-bold" href="#">Verdic-AI.com</a>. All Rights Reserved.</p>
+                </div>
+            </div>
+        </div>
+        <!-- Footer End -->
+
+
+    <!-- Back to Top -->
+    <a href="#" class="btn btn-primary px-3 back-to-top"><i class="fa fa-angle-double-up"></i></a>
+
+
+    <!-- JavaScript Libraries -->
+    <script src="https://code.jquery.com/jquery-3.4.1.min.js"></script>
+    <script src="https://stackpath.bootstrapcdn.com/bootstrap/4.4.1/js/bootstrap.bundle.min.js"></script>
+    <script src="lib/easing/easing.min.js"></script>
+    <script src="lib/waypoints/waypoints.min.js"></script>
+    <script src="lib/owlcarousel/owl.carousel.min.js"></script>
+    <script src="lib/tempusdominus/js/moment.min.js"></script>
+    <script src="lib/tempusdominus/js/moment-timezone.min.js"></script>
+    <script src="lib/tempusdominus/js/tempusdominus-bootstrap-4.min.js"></script>
+
+    <!-- Contact Javascript File -->
+    <script src="mail/jqBootstrapValidation.min.js"></script>
+    <script src="mail/contact.js"></script>
+
+    <!-- Template Javascript -->
+    <script src="js/main.js"></script>
+
+    <!-- JavaScript Libraries -->
+    <script src="https://code.jquery.com/jquery-3.4.1.min.js"></script>
+    <script src="https://stackpath.bootstrapcdn.com/bootstrap/4.4.1/js/bootstrap.bundle.min.js"></script>
+    <script src="{{ url_for('static', filename='lib/easing/easing.min.js') }}"></script>
+    <script src="{{ url_for('static', filename='lib/waypoints/waypoints.min.js') }}"></script>
+    <script src="{{ url_for('static', filename='lib/owlcarousel/owl.carousel.min.js') }}"></script>
+    <script src="{{ url_for('static', filename='lib/tempusdominus/js/moment.min.js') }}"></script>
+    <script src="{{ url_for('static', filename='lib/tempusdominus/js/moment-timezone.min.js') }}"></script>
+    <script src="{{ url_for('static', filename='lib/tempusdominus/js/tempusdominus-bootstrap-4.min.js') }}"></script>
+
+    <!-- Template Javascript -->
+    <script src="{{ url_for('static', filename='js/main.js') }}"></script>
+
+
+</body>
+
+</html>
