@@ -9,7 +9,7 @@ from docgen import generate_legal_brief_pdf_from_json
 
 def generatedoc():
     client = genai.Client(
-        api_key="AIzaSyD_UWu4XTSMirLEvICqFosqxukDZ2Z_k0g"
+        api_key=""
     )
 
     model = "gemini-2.5-pro-exp-03-25"
