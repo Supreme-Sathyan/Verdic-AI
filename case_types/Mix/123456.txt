@@ -1,0 +1,7 @@
+Case Number: 123456
+Plaintiff: Sathyan 
+Defendant: Shashank
+Summary: He was injured in a car crash 
+Claim: He has to pay 100000
+Defense: He has no money available
+Hearing Date: 2025-06-02
