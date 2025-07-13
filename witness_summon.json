@@ -1,0 +1,23 @@
+{
+    "witness_summon": {
+        "witness_name": "Recipient (Name not specified in text)",
+        "witness_address": "Recipient Address (Not specified in text)",
+        "case_name": "John Doe v. Jane Smith",
+        "case_number": "12345-2024",
+        "plaintiff_name": "John Doe",
+        "defendant_name": "Jane Smith",
+        "court_name": "Superior Court of [County], [State]",
+        "court_address": "123 Court Street, City, State, ZIP",
+        "hearing_date": "May 15, 2024",
+        "hearing_time": "10:00 AM",
+        "testimony_purpose": "To address key facts related to a contract dispute between the plaintiff (John Doe) and defendant (Jane Smith), specifically regarding the signed agreement dated March 1, 2024, and any subsequent communications or meetings relevant to the dispute.",
+        "failure_consequences": "Contempt of court, fines, or arrest.",
+        "rescheduling_contact_person": "Alice Johnson",
+        "rescheduling_contact_title": "Attorney for the Plaintiff",
+        "rescheduling_contact_phone": "(555) 123-4567",
+        "rescheduling_contact_email": "alice.johnson@lawfirm.com",
+        "document_submission_contact": "Alice Johnson",
+        "document_submission_address": "Law Firm Name, 456 Legal Lane, City, State, ZIP",
+        "date_issued": "Not specified in text"
+    }
+}

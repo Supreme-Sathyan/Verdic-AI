@@ -1,0 +1,4 @@
+case_no,case_type,judge_id,scheduled_date,scheduled_time,duration_minutes,urgency,complexity,status
+4,Civil,J004,2025-05-06,09:00,32.0,4,75,Scheduled
+8,Criminal,J004,2025-05-06,10:00,62.0,4,95,Scheduled
+12,Family,J004,2025-05-06,11:00,15.0,4,35,Scheduled

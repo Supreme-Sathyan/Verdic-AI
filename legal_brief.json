@@ -1,0 +1,14 @@
+{
+    "Legal Brief": {
+        "case_name": "/2019",
+        "case_number": "/2019",
+        "plaintiff": "Smt.Padm",
+        "defendant": "M/s Sree Krishna Automotives Hyd Pvt. Ltd.",
+        "court_name": "DISTRICT CONSUMER DISPUTES REDRESSAL COMMISSION : RANGA REDDY",
+        "date_filed": "05.09.2019",
+        "date_of_order": "14.02.2023",
+        "summary_of_facts": "Complainant purchased a Honda Amaze from the Opposite Party, believing it was new. / Soon after purchase, she noticed defects (unusual sounds, rust) and discovered through service records and Honda's online data that the vehicle had been previously associated with/sold to another customer (Nagesh Charugundla). / The warranty also appeared to start before her purchase date. / Complainant alleges this constitutes selling a used/defective vehicle misrepresented as new.",
+        "legal_arguments": "Complainant argues the Opposite Party committed unfair trade practice and deficiency of service by selling a vehicle previously associated with another customer, failing to disclose this, and delivering a vehicle with defects (rust, sounds) present shortly after purchase. / Evidence included invoices and Honda app data showing the previous customer's details linked to the vehicle's chassis/engine number and an earlier warranty start date. / Opposite Party argues the previous customer's details were uploaded inadvertently due to a cancelled booking, the complainant is the first registered owner, the rust issue is a normal property of the material (brake discs), and they offered to correct warranty details and extend it. / The Commission found the Opposite Party's explanation for the third-party data unconvincing and deemed it a deceptive practice amounting to unfair trade practice. / The Commission also held the dealer liable for the unresolved defects (rust, sounds requiring multiple visits) as deficiency of service, citing precedents that numerous repair attempts suffice to prove a defect under the Consumer Protection Act.",
+        "conclusion": "Complaint partly allowed. / Opposite Party directed to rectify recurring defects to the complainant's satisfaction within 15 days (providing a spare vehicle during this period), extend the warranty for two additional years free of cost, pay Rs. 3,00,000/- compensation for physical hardship, financial and mental trauma, and pay Rs. 30,000/- towards litigation costs."
+    }
+}

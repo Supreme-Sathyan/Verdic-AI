@@ -1,0 +1,21 @@
+{
+    "document_type": "Affidavit",
+    "affiant_details": {
+        "full_name": "Ravi Kumar",
+        "parent_name": "Mr. Mohan Kumar",
+        "address": "42, Green Park Colony, Hyderabad, Telangana, 500016"
+    },
+    "statement_of_competence": "I am fully competent to make this statement.",
+    "declaration": {
+        "subject": "Loss of Original Aadhar Card",
+        "lost_item": "Original Aadhar Card",
+        "item_identifier": "1234-5678-9012",
+        "date_of_loss": "on or around March 25, 2024",
+        "location_of_loss": "while traveling from Begumpet to Secunderabad",
+        "recovery_efforts_outcome": "Despite thorough efforts, I have been unable to recover the same."
+    },
+    "purpose_of_affidavit": "To formally declare the loss and to support my request for issuance of a duplicate or for any other legal or official purpose.",
+    "affirmation_of_truth": "I affirm that all the statements made above are true to the best of my knowledge and belief, and nothing has been concealed.",
+    "place_of_signing": "Hyderabad",
+    "date_of_signing": "[Insert Date Affidavit is Signed]"
+}
